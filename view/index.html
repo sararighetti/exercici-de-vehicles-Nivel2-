@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Cars</title>
+</head>
+<body id="body" onload="ocultarWheel()">
+    <div class="container my-2" id="carBox">
+        <h1 class="text-center">CREATE CAR</h1>
+        <div class="row my-5">
+            <div class="col-4">
+                <label><b>Plate</b></label>
+                <input id="plate" class="form-control" type="text">
+                <div class="invalid-feedback" id="errorPlate"></div>
+            </div>
+            <div class="col-4">
+                <label><b>Brand</b></label>
+                <input id="brand" class="form-control" type="text">
+            </div>
+            <div class="col-4">
+                <label><b>Color</b></label>
+                <input id="color" class="form-control" type="text">
+            </div>
+        </div>  
+        <p id="carInfo"></p>
+        <button class="btn btn-info" onclick="addCar()"><b>Add Car</b></button>
+    </div>
+    <hr>
+   <!----FORM RUEDAS-->
+<div class="container" id="ocultar">
+    <h1 class="my-5">Add Wheels information</h1>
+    <div class="row text-center">
+        <div class="col-3 font-monospace">
+            <label><b>Brand Wheel 1</b></label>
+            <input id="brand1" class="form-control" type="text">
+            <label><b>Diameter Wheel 1 </b></label>
+            <input id="diametro1" class="form-control" type="number" name="diametros">
+            <div class="invalid-feedback" id="errorDiametro1"></div>
+        </div>
+        <div class="col-3 font-monospace">
+            <label><b>Brand Wheel 2</b></label>
+            <input id="brand2" class="form-control" type="text">
+            <label><b>Diameter Wheel 2 </b></label>
+            <input id="diametro2" class="form-control" type="number" name="diametros">
+            <div class="invalid-feedback" id="errorDiametro2"></div>
+
+        </div>
+        <div class="col-3 font-monospace">
+            <label><b>Brand Wheel 3</b></label>
+            <input id="brand3" class="form-control" type="text">
+            <label><b>Diameter Wheel 3 </b></label>
+            <input id="diametro3" class="form-control" type="number" name="diametros">
+            <div class="invalid-feedback" id="errorDiametro3"></div>
+
+        </div>
+        <div class="col-3 font-monospace">
+            <label><b>Brand Wheel 4</b></label>
+            <input id="brand4" class="form-control" type="text">
+            <label><b>Diameter Wheel 4 </b></label>
+            <input id="diametro4" class="form-control" type="number" name="diametros">
+            <div class="invalid-feedback" id="errorDiametro4"></div>
+
+        </div>
+    </div>  
+<button class="btn btn-primary my-2" onclick="addWheel()"><b>Add Wheels</b></button>
+<p id="wheelInfo"class="h3 my-2"></p>
+
+    <script src="../models/cars.js"></script>
+<script src="../models/wheels.js"></script>
+<script src="../controller/controllers.js"></script>
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
+</body>
+</html>
